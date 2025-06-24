@@ -47,12 +47,12 @@ const ContactForm = () => {
   };
 
   return (
-    <Card className="shadow-xl border-0">
+    <Card className="border border-gray-800 bg-gray-900/50 backdrop-blur-sm">
       <CardContent className="p-8">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <Label htmlFor="name" className="text-gray-700 font-medium">Full Name *</Label>
+              <Label htmlFor="name" className="text-gray-300 font-medium">Full Name *</Label>
               <Input
                 id="name"
                 type="text"
@@ -60,11 +60,11 @@ const ContactForm = () => {
                 value={formData.name}
                 onChange={(e) => handleInputChange("name", e.target.value)}
                 required
-                className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                className="border-gray-700 bg-gray-800/50 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="brand" className="text-gray-700 font-medium">Brand/Company *</Label>
+              <Label htmlFor="brand" className="text-gray-300 font-medium">Brand/Company *</Label>
               <Input
                 id="brand"
                 type="text"
@@ -72,25 +72,25 @@ const ContactForm = () => {
                 value={formData.brand}
                 onChange={(e) => handleInputChange("brand", e.target.value)}
                 required
-                className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                className="border-gray-700 bg-gray-800/50 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <Label htmlFor="website" className="text-gray-700 font-medium">Website</Label>
+              <Label htmlFor="website" className="text-gray-300 font-medium">Website</Label>
               <Input
                 id="website"
                 type="url"
                 placeholder="https://yourwebsite.com"
                 value={formData.website}
                 onChange={(e) => handleInputChange("website", e.target.value)}
-                className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                className="border-gray-700 bg-gray-800/50 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email" className="text-gray-700 font-medium">Email Address *</Label>
+              <Label htmlFor="email" className="text-gray-300 font-medium">Email Address *</Label>
               <Input
                 id="email"
                 type="email"
@@ -98,18 +98,18 @@ const ContactForm = () => {
                 value={formData.email}
                 onChange={(e) => handleInputChange("email", e.target.value)}
                 required
-                className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                className="border-gray-700 bg-gray-800/50 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="targetType" className="text-gray-700 font-medium">Target Type *</Label>
+            <Label htmlFor="targetType" className="text-gray-300 font-medium">Target Type *</Label>
             <Select value={formData.targetType} onValueChange={(value) => handleInputChange("targetType", value)}>
-              <SelectTrigger className="border-gray-300 focus:border-blue-500 focus:ring-blue-500">
+              <SelectTrigger className="border-gray-700 bg-gray-800/50 text-white focus:border-blue-500 focus:ring-blue-500">
                 <SelectValue placeholder="Select your target type" />
               </SelectTrigger>
-              <SelectContent className="bg-white border border-gray-200 shadow-lg">
+              <SelectContent className="bg-gray-800 border border-gray-700 text-white">
                 <SelectItem value="offline">Offline Store (Geo-targeted)</SelectItem>
                 <SelectItem value="d2c">D2C/Online Brand (Behavior-based)</SelectItem>
                 <SelectItem value="both">Both Offline and Online</SelectItem>
@@ -119,38 +119,38 @@ const ContactForm = () => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="platform" className="text-gray-700 font-medium">POS/Platform Used</Label>
+            <Label htmlFor="platform" className="text-gray-300 font-medium">POS/Platform Used</Label>
             <Input
               id="platform"
               type="text"
               placeholder="e.g., Shopify, Razorpay POS, Square, etc."
               value={formData.platform}
               onChange={(e) => handleInputChange("platform", e.target.value)}
-              className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+              className="border-gray-700 bg-gray-800/50 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500"
             />
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="cityDemographics" className="text-gray-700 font-medium">City/Target Demographics</Label>
+            <Label htmlFor="cityDemographics" className="text-gray-300 font-medium">City/Target Demographics</Label>
             <Input
               id="cityDemographics"
               type="text"
               placeholder="e.g., Mumbai, Delhi, 25-35 age group, etc."
               value={formData.cityDemographics}
               onChange={(e) => handleInputChange("cityDemographics", e.target.value)}
-              className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+              className="border-gray-700 bg-gray-800/50 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500"
             />
           </div>
 
           <Button 
             type="submit" 
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 text-lg"
+            className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 text-lg border-0"
             size="lg"
           >
             Submit & Get Started
           </Button>
 
-          <p className="text-sm text-gray-500 text-center">
+          <p className="text-sm text-gray-400 text-center">
             By submitting this form, you agree to our terms and privacy policy. 
             We'll contact you within 24 hours to discuss your campaign.
           </p>
