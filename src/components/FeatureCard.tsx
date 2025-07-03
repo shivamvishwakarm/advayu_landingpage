@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 
 interface FeatureCardProps {
@@ -14,8 +13,12 @@ const FeatureCard = ({ icon, title, description }: FeatureCardProps) => {
         <div className="w-16 h-16 bg-gradient-to-br from-gray-700/30 to-gray-800/30 border border-gray-700/50 rounded-2xl flex items-center justify-center mx-auto mb-6 text-gray-300 group-hover:scale-110 transition-transform duration-300 group-hover:rotate-6">
           {icon}
         </div>
-        <h3 className="text-xl lg:text-2xl font-black mb-4 text-white tracking-tight">{title}</h3>
-        <p className="text-gray-300 leading-relaxed font-light">{description}</p>
+        <h3 className="text-xl lg:text-2xl font-black mb-4 text-white tracking-tight">
+          {title}
+        </h3>
+        <p className="text-gray-300 leading-relaxed font-light">
+          {description}
+        </p>
       </CardContent>
     </Card>
   );
