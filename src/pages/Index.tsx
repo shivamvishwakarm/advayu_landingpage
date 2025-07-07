@@ -46,9 +46,8 @@ const floatingIcons = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-transparent text-white relative overflow-hidden">
+    <div className="min-h-screen bg-transparent text-white relative overflow-hidden ">
       {/* <div className="fixed inset-0 pointer-events-none z-0">
-   
         <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
         <div
           className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-r from-pink-500/20 to-orange-500/20 rounded-full blur-3xl animate-pulse"
@@ -57,10 +56,8 @@ const Index = () => {
           className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-full blur-3xl animate-pulse"
           style={{ animationDelay: "4s" }}></div>
 
-
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-blue-950/10 to-purple-950/20"></div>
 
-       
         <div className="absolute inset-0 opacity-[0.02]">
           <div
             className="absolute inset-0"
@@ -252,7 +249,7 @@ const Index = () => {
       </section>
 
       {/* What is Advayu */}
-      <section className="py-24 bg-gray-950/50 relative ">
+      <section className="pt-10 pb-20 bg-gradient-to-bl from-black via-black to-blue-900 relative ">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl lg:text-6xl font-black mb-8 text-white tracking-tight bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
@@ -285,7 +282,7 @@ const Index = () => {
       {/* How it Works */}
       <section
         id="how-it-works"
-        className="py-24 bg-gradient-to-br from-gray-900/50 to-gray-950/50 relative ">
+        className="py-24 bg-gradient-to-b from-blue-900 via-blue-900 via-black  to-black relative ">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-6xl font-black mb-6 text-white tracking-tight">
