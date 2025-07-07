@@ -29,6 +29,9 @@ import ContactForm from "@/components/ContactForm";
 import TestimonialCard from "@/components/TestimonialCard";
 import FeatureCard from "@/components/FeatureCard";
 import Logo from "@/components/Logo";
+import DemoButton from "@/components/DemoButton";
+import Advayu_logo from "@/components/Advayu_logo";
+import Navbar from "@/components/Navbar";
 
 const floatingIcons = [
   { icon: Star, delay: "0s", duration: "20s", x: "10%", y: "20%" },
@@ -43,10 +46,9 @@ const floatingIcons = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-950 text-white relative overflow-hidden">
-      {/* Artistic Background Effects */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        {/* Gradient Orbs */}
+    <div className="min-h-screen bg-transparent text-white relative overflow-hidden">
+      {/* <div className="fixed inset-0 pointer-events-none z-0">
+   
         <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
         <div
           className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-r from-pink-500/20 to-orange-500/20 rounded-full blur-3xl animate-pulse"
@@ -55,10 +57,10 @@ const Index = () => {
           className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-full blur-3xl animate-pulse"
           style={{ animationDelay: "4s" }}></div>
 
-        {/* Mesh Gradient Overlay */}
+
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-blue-950/10 to-purple-950/20"></div>
 
-        {/* Animated Grid Pattern */}
+       
         <div className="absolute inset-0 opacity-[0.02]">
           <div
             className="absolute inset-0"
@@ -71,10 +73,10 @@ const Index = () => {
               animation: "grid-move 20s linear infinite",
             }}></div>
         </div>
-      </div>
+      </div> */}
 
       {/* Animated Background Icons */}
-      <div className="fixed inset-0 pointer-events-none opacity-5 z-0">
+      {/* <div className="fixed inset-0 pointer-events-none opacity-5 z-0">
         {floatingIcons.map((item, index) => {
           const IconComponent = item.icon;
           return (
@@ -92,7 +94,7 @@ const Index = () => {
             />
           );
         })}
-      </div>
+      </div> */}
 
       {/* Navigation Bar */}
       <nav className="border-b border-gray-800/50 bg-black backdrop-blur-xl sticky top-0 z-50 transition-all duration-300">
@@ -102,8 +104,10 @@ const Index = () => {
               Advayu
             </div> */}
 
-            <Logo />
-            <div className="hidden md:flex items-center space-x-8">
+            <Navbar />
+            {/* <Advayu_logo /> */}
+            {/* <Logo /> */}
+            {/* <div className="hidden md:flex items-center space-x-8">
               <a
                 href="#how-it-works"
                 className="text-gray-300 hover:text-white transition-all duration-300 font-medium hover:scale-105 transform relative group">
@@ -128,110 +132,118 @@ const Index = () => {
                 Login
               </Button>
               <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 transition-all duration-300 hover:scale-105 transform hover:shadow-xl relative overflow-hidden group">
-                <span className="relative z-10">Get Started</span>
+                <span className="relative ">Get Started</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-20 pb-32 bg-gradient-to-b from-gray-900/50 to-gray-950 relative z-10">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto text-center">
-            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-950/50 to-purple-950/50 border border-blue-800/30 rounded-full text-blue-300 text-sm font-medium mb-8 animate-fade-in backdrop-blur-sm">
-              <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-green-400 rounded-full mr-3 animate-pulse"></div>
-              Advayu X POP
-              <img
-                src="/image.png"
-                alt="POP"
-                className="w-4 h-4 mx-2  text-yellow-400 "
-              />
-              {"   "}
-              is Now Live
-            </div>
-            {/* <h1
-              className="text-5xl lg:text-8xl font-black mb-8 leading-tight tracking-tight animate-fade-in"
-              style={{ animationDelay: "0.2s" }}>
-              List Your Offers Inside{" "}
-              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient-x relative">
-                UPI Apps
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-pink-400/20 blur-lg -z-10"></div>
-              </span>
-            </h1> */}
+      <section className="pt-20 pb-32 relative bg-black h-screen">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute top-0 left-6 w-full h-[70vh] opacity-50 z-0 border-red-400 ">
+          <source src="/hero1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="relative z-10  ">
+          <div className="container mx-auto px-6 ">
+            <div className="max-w-5xl mx-auto text-center">
+              <div className="inline-flex items-center px-6 py-3 border border-blue-800/30 rounded-full text-blue-300 text-sm font-medium mb-4  backdrop-blur-sm transform -translate-y-16 bg-blue-200/20">
+                <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-green-400 rounded-full mr-3 animate-pulse" />
+                Advayu X POP
+                <img src="/image.png" alt="POP" className="w-4 h-4 mx-2" />
+                is Now Live
+              </div>
+              {/* <h1
+                    className="text-5xl lg:text-8xl font-black mb-8 leading-tight tracking-tight animate-fade-in"
+                    style={{ animationDelay: "0.2s" }}>
+                    List Your Offers Inside{" "}
+                    <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient-x relative">
+                      UPI Apps
+                      <div className="absolute -inset-1 bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-pink-400/20 blur-lg -"></div>
+                    </span>
+                  </h1> */}
 
-            <h1
-              className="text-[4rem] font-black mb-8 leading-tight tracking-tight animate-fade-in"
-              style={{ animationDelay: "0.2s" }}>
-              Put your brand where India pays. <br />
-              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient-x relative">
-                Inside UPI apps.
-              </span>
-            </h1>
-            <p
-              className="text-xl lg:text-2xl mb-12 text-gray-300 max-w-4xl mx-auto leading-relaxed font-light animate-fade-in"
-              style={{ animationDelay: "0.4s" }}>
-              Reach customers right at the point of payment with geo- and
-              behavior-targeted rewards that drive{" "}
-              <span className="text-transparent bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text font-semibold">
-                instant action
-              </span>
-              .
-            </p>
-            <div
-              className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in"
-              style={{ animationDelay: "0.6s" }}>
-              <Button
+              <h1
+                className="text-5xl lg:text-6xl font-black mb-8 leading-tight tracking-tight animate-fade-in"
+                style={{ animationDelay: "0.2s" }}>
+                Put your brand where India pays. <br />
+                <span className="bg-blue-500 bg-clip-text text-transparent animate-gradient-x relative">
+                  Inside UPI apps.
+                </span>
+              </h1>
+              <p
+                className="text-xl lg:text-2xl mb-12 text-gray-300 max-w-4xl mx-auto leading-relaxed font-light animate-fade-in"
+                style={{ animationDelay: "0.4s" }}>
+                Reach customers right at the point of payment with geo- and
+                behavior-targeted rewards that drive{" "}
+                <span className="text-transparent bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text font-semibold">
+                  instant action
+                </span>
+                .
+              </p>
+              <div
+                className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in"
+                style={{ animationDelay: "0.6s" }}>
+                {/* <Button
                 size="lg"
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 text-lg h-14 border-0 transition-all duration-300 hover:scale-105 transform hover:shadow-2xl relative overflow-hidden group">
-                <span className="relative z-10 flex items-center">
+                <span className="relative  flex items-center">
                   Book a Demo{" "}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </Button>
-              <Button
+              </Button> */}
+
+                <DemoButton />
+                {/* <Button
                 size="lg"
                 variant="outline"
                 className="border-gray-600/50 bg-gray-800/50 text-white px-8 py-4 text-lg h-14 transition-all duration-300 hover:scale-105 transform backdrop-blur-sm group">
                 <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
                 Watch Demo
-              </Button>
-            </div>
-            <div
-              className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto animate-fade-in"
-              style={{ animationDelay: "0.8s" }}>
-              <div className="text-center transform hover:scale-110 transition-all duration-300 group">
-                <div className="text-3xl lg:text-4xl font-black text-white mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
-                  10M+
-                </div>
-                <div className="text-gray-400 text-sm font-medium">
-                  Monthly Users
-                </div>
+              </Button> */}
               </div>
-              <div className="text-center transform hover:scale-110 transition-all duration-300 group">
-                <div className="text-3xl lg:text-4xl font-black text-white mb-2 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
-                  300%
+              <div
+                className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto animate-fade-in "
+                style={{ animationDelay: "0.8s" }}>
+                <div className="text-center transform hover:scale-110 transition-all duration-300 group">
+                  <div className="text-3xl lg:text-4xl font-black text-white mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
+                    10M+
+                  </div>
+                  <div className="text-gray-400 text-sm font-medium">
+                    Monthly Users
+                  </div>
                 </div>
-                <div className="text-gray-400 text-sm font-medium">
-                  Avg ROI Boost
+                <div className="text-center transform hover:scale-110 transition-all duration-300 group">
+                  <div className="text-3xl lg:text-4xl font-black text-white mb-2 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
+                    300%
+                  </div>
+                  <div className="text-gray-400 text-sm font-medium">
+                    Avg ROI Boost
+                  </div>
                 </div>
-              </div>
-              <div className="text-center transform hover:scale-110 transition-all duration-300 group">
-                <div className="text-3xl lg:text-4xl font-black text-white mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
-                  1-Tap
+                <div className="text-center transform hover:scale-110 transition-all duration-300 group">
+                  <div className="text-3xl lg:text-4xl font-black text-white mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
+                    1-Tap
+                  </div>
+                  <div className="text-gray-400 text-sm font-medium">
+                    Redemption
+                  </div>
                 </div>
-                <div className="text-gray-400 text-sm font-medium">
-                  Redemption
-                </div>
-              </div>
-              <div className="text-center transform hover:scale-110 transition-all duration-300 group">
-                <div className="text-3xl lg:text-4xl font-black text-white mb-2 bg-gradient-to-r from-pink-400 to-red-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
-                  200+
-                </div>
-                <div className="text-gray-400 text-sm font-medium">
-                  Active Brands
+                <div className="text-center transform hover:scale-110 transition-all duration-300 group">
+                  <div className="text-3xl lg:text-4xl font-black text-white mb-2 bg-gradient-to-r from-pink-400 to-red-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
+                    200+
+                  </div>
+                  <div className="text-gray-400 text-sm font-medium">
+                    Active Brands
+                  </div>
                 </div>
               </div>
             </div>
@@ -240,7 +252,7 @@ const Index = () => {
       </section>
 
       {/* What is Advayu */}
-      <section className="py-24 bg-gray-950/50 relative z-10">
+      <section className="py-24 bg-gray-950/50 relative ">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl lg:text-6xl font-black mb-8 text-white tracking-tight bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
@@ -258,7 +270,7 @@ const Index = () => {
             </p>
             <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 border border-gray-800/50 rounded-3xl p-8 backdrop-blur-sm hover:bg-gray-800/50 transition-all duration-500 transform hover:scale-105 relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="text-lg lg:text-xl text-gray-300 italic font-light relative z-10">
+              <div className="text-lg lg:text-xl text-gray-300 italic font-light relative ">
                 "No app downloads, no friction – just{" "}
                 <span className="text-transparent bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text font-semibold">
                   instant value
@@ -273,7 +285,7 @@ const Index = () => {
       {/* How it Works */}
       <section
         id="how-it-works"
-        className="py-24 bg-gradient-to-br from-gray-900/50 to-gray-950/50 relative z-10">
+        className="py-24 bg-gradient-to-br from-gray-900/50 to-gray-950/50 relative ">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-6xl font-black mb-6 text-white tracking-tight">
@@ -388,7 +400,7 @@ const Index = () => {
       </section>
 
       {/* Why Brands Choose Advayu */}
-      <section id="features" className="py-24 bg-gray-950/50 relative z-10">
+      <section id="features" className="py-24 bg-gray-950/50 relative ">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-6xl font-black mb-6 text-white tracking-tight">
@@ -434,7 +446,7 @@ const Index = () => {
       </section>
 
       {/* Who It's For */}
-      <section className="py-24 bg-gradient-to-br from-gray-900/50 to-gray-950/50 relative z-10">
+      <section className="py-24 bg-gradient-to-br from-gray-900/50 to-gray-950/50 relative ">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-6xl font-black mb-6 text-white tracking-tight">
@@ -531,7 +543,7 @@ const Index = () => {
       </section>
 
       {/* Distribution Partners */}
-      <section className="py-24 bg-black relative z-10">
+      <section className="py-24 bg-black relative ">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -591,7 +603,7 @@ const Index = () => {
       {/* Testimonials */}
       <section
         id="testimonials"
-        className="py-24 bg-gradient-to-br from-gray-900/50 to-gray-950/50 relative z-10">
+        className="py-24 bg-gradient-to-br from-gray-900/50 to-gray-950/50 relative ">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-6xl font-black mb-6 text-white tracking-tight">
@@ -622,7 +634,7 @@ const Index = () => {
       </section>
 
       {/* About Us */}
-      <section className="py-24 bg-gray-950/50 relative z-10">
+      <section className="py-24 bg-gray-950/50 relative ">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -677,9 +689,9 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-gray-900/50 to-gray-950/50 relative z-10 overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-gray-900/50 to-gray-950/50 relative  overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10"></div>
-        <div className="container mx-auto px-6 text-center relative z-10">
+        <div className="container mx-auto px-6 text-center relative ">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl lg:text-6xl font-black mb-8 text-white tracking-tight bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
               Ready to Transform Your Customer Acquisition?
@@ -697,7 +709,7 @@ const Index = () => {
               <Button
                 size="lg"
                 className="bg-white hover:bg-gray-100 text-gray-900 font-semibold px-8 py-4 text-lg h-14 border-0 transition-all duration-300 hover:scale-105 transform hover:shadow-2xl relative overflow-hidden group">
-                <span className="relative z-10 flex items-center">
+                <span className="relative  flex items-center">
                   Book a Demo{" "}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </span>
@@ -714,7 +726,7 @@ const Index = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-24 bg-gradient-to-br from-gray-900/50 to-gray-950/50 relative z-10">
+      <section className="py-24 bg-gradient-to-br from-gray-900/50 to-gray-950/50 relative ">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
