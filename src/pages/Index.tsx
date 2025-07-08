@@ -16,6 +16,8 @@ import {
   Wifi,
   Cloud,
   Smartphone,
+  Store,
+  CornerDownRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -32,6 +34,7 @@ import Logo from "@/components/Logo";
 import DemoButton from "@/components/DemoButton";
 import Advayu_logo from "@/components/Advayu_logo";
 import Navbar from "@/components/Navbar";
+import MobileShoping from "@/components/icons/mobile-shoping";
 
 const floatingIcons = [
   { icon: Star, delay: "0s", duration: "20s", x: "10%", y: "20%" },
@@ -235,7 +238,7 @@ const Index = () => {
             <Card className="p-8 border border-gray-800 bg-gray-900/50 backdrop-blur-sm hover:bg-gray-800/50 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl">
               <CardHeader className="text-center pb-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-blue-500/20 to-blue-600/20 border border-blue-500/30 rounded-2xl flex items-center justify-center mx-auto mb-6 transform hover:rotate-6 transition-transform duration-300">
-                  <Target className="h-10 w-10 text-blue-400" />
+                  <Store className="h-10 w-10 text-blue-400" />
                 </div>
                 <CardTitle className="text-2xl lg:text-3xl font-black text-white mb-2 tracking-tight">
                   Offline Stores
@@ -247,32 +250,32 @@ const Index = () => {
               <CardContent className="space-y-6">
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-green-500/20 to-green-600/20 border border-green-500/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-green-400" />
+                    <div className="w-8 h-8  flex items-center justify-center flex-shrink-0 mt-1">
+                      <CornerDownRight className="h-5 w-5 text-blue-400" />
                     </div>
                     <p className="text-gray-300 text-lg">
                       Customer opens UPI app near your store
                     </p>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-green-500/20 to-green-600/20 border border-green-500/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-green-400" />
+                    <div className="w-8 h-8  flex items-center justify-center flex-shrink-0 mt-1">
+                      <CornerDownRight className="h-5 w-5 text-blue-400" />
                     </div>
                     <p className="text-gray-300 text-lg">
                       Advayu shows your targeted offer
                     </p>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-green-500/20 to-green-600/20 border border-green-500/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-green-400" />
+                    <div className="w-8 h-8  flex items-center justify-center flex-shrink-0 mt-1">
+                      <CornerDownRight className="h-5 w-5 text-blue-400" />
                     </div>
                     <p className="text-gray-300 text-lg">
                       1-tap redemption drives immediate footfall
                     </p>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-green-500/20 to-green-600/20 border border-green-500/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-green-400" />
+                    <div className="w-8 h-8  flex items-center justify-center flex-shrink-0 mt-1">
+                      <CornerDownRight className="h-5 w-5 text-blue-400" />
                     </div>
                     <p className="text-gray-300 text-lg">
                       Pay only for successful conversions
@@ -297,32 +300,32 @@ const Index = () => {
               <CardContent className="space-y-6">
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-green-500/20 to-green-600/20 border border-green-500/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-green-400" />
+                    <div className="w-8 h-8  flex items-center justify-center flex-shrink-0 mt-1">
+                      <CornerDownRight className="h-5 w-5 text-blue-400" />
                     </div>
                     <p className="text-gray-300 text-lg">
                       AI analyzes spend patterns & demographics
                     </p>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-green-500/20 to-green-600/20 border border-green-500/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-green-400" />
+                    <div className="w-8 h-8  flex items-center justify-center flex-shrink-0 mt-1">
+                      <CornerDownRight className="h-5 w-5 text-blue-400" />
                     </div>
                     <p className="text-gray-300 text-lg">
                       Show offers to your ideal customers
                     </p>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-green-500/20 to-green-600/20 border border-green-500/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-green-400" />
+                    <div className="w-8 h-8  flex items-center justify-center flex-shrink-0 mt-1">
+                      <CornerDownRight className="h-5 w-5 text-blue-400" />
                     </div>
                     <p className="text-gray-300 text-lg">
                       Seamless checkout integration
                     </p>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-green-500/20 to-green-600/20 border border-green-500/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-green-400" />
+                    <div className="w-8 h-8  flex items-center justify-center flex-shrink-0 mt-1">
+                      <CornerDownRight className="h-5 w-5 text-blue-400" />
                     </div>
                     <p className="text-gray-300 text-lg">
                       Track ROI with detailed analytics
@@ -350,32 +353,32 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             <FeatureCard
-              icon={<Zap className="h-8 w-8  " />}
+              icon={<Zap className="h-8 w-8 text-[#80a4c3]  " />}
               title="No App Install Required"
               description="Reach customers directly within their existing UPI apps without any friction"
             />
             <FeatureCard
-              icon={<Target className="h-8 w-8" />}
+              icon={<Target className="h-8 w-8 text-[#80a4c3]  " />}
               title="1-Tap Redemption"
               description="Frictionless experience drives 3x higher conversion rates than traditional ads"
             />
             <FeatureCard
-              icon={<TrendingUp className="h-8 w-8" />}
+              icon={<TrendingUp className="h-8 w-8 text-[#80a4c3]  " />}
               title="Pay-Per-Action Pricing"
               description="Only pay when customers actually engage with your offers - no wasted spend"
             />
             <FeatureCard
-              icon={<Users className="h-8 w-8" />}
+              icon={<Users className="h-8 w-8 text-[#80a4c3]  " />}
               title="Precise Targeting"
               description="Geo and behavior-based targeting ensures maximum relevance and ROI"
             />
             <FeatureCard
-              icon={<Shield className="h-8 w-8" />}
+              icon={<Shield className="h-8 w-8 text-[#80a4c3]  " />}
               title="Brand Safe Environment"
               description="Your offers appear in trusted financial apps with high user intent"
             />
             <FeatureCard
-              icon={<Globe className="h-8 w-8 " />}
+              icon={<Globe className="h-8 w-8 text-[#80a4c3]  " />}
               title="Massive Reach"
               description="Access 50M+ active UPI users across India's top payment platforms"
             />
@@ -398,7 +401,7 @@ const Index = () => {
             <Card className="p-10 border border-gray-800 bg-gray-900/50 backdrop-blur-sm hover:bg-gray-800/50 transition-all duration-300 hover:scale-105">
               <CardHeader className="text-center">
                 <div className="w-24 h-24 bg-gradient-to-br from-blue-500/20 to-blue-600/20 border border-blue-500/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                  <Target className="h-12 w-12 text-blue-400" />
+                  <Store className="h-12 w-12 text-blue-400" />
                 </div>
                 <CardTitle className="text-3xl font-bold text-white mb-4">
                   Offline Brands
@@ -410,23 +413,23 @@ const Index = () => {
               <CardContent className="space-y-6">
                 <ul className="space-y-4">
                   <li className="flex items-center space-x-4">
-                    <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0" />
+                    <CornerDownRight className="h-6 w-6 text-blue-400 flex-shrink-0" />
                     <span className="text-gray-300 text-lg">
                       Restaurants & Cafes
                     </span>
                   </li>
                   <li className="flex items-center space-x-4">
-                    <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0" />
+                    <CornerDownRight className="h-6 w-6 text-blue-400 flex-shrink-0" />
                     <span className="text-gray-300 text-lg">Retail Stores</span>
                   </li>
                   <li className="flex items-center space-x-4">
-                    <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0" />
+                    <CornerDownRight className="h-6 w-6 text-blue-400 flex-shrink-0" />
                     <span className="text-gray-300 text-lg">
                       Service Businesses
                     </span>
                   </li>
                   <li className="flex items-center space-x-4">
-                    <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0" />
+                    <CornerDownRight className="h-6 w-6 text-blue-400 flex-shrink-0" />
                     <span className="text-gray-300 text-lg">
                       Entertainment Venues
                     </span>
@@ -450,25 +453,25 @@ const Index = () => {
               <CardContent className="space-y-6">
                 <ul className="space-y-4">
                   <li className="flex items-center space-x-4">
-                    <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0" />
+                    <CornerDownRight className="h-6 w-6 text-blue-400 flex-shrink-0" />
                     <span className="text-gray-300 text-lg">
                       E-commerce Platforms
                     </span>
                   </li>
                   <li className="flex items-center space-x-4">
-                    <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0" />
+                    <CornerDownRight className="h-6 w-6 text-blue-400 flex-shrink-0" />
                     <span className="text-gray-300 text-lg">
                       SaaS Companies
                     </span>
                   </li>
                   <li className="flex items-center space-x-4">
-                    <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0" />
+                    <CornerDownRight className="h-6 w-6 text-blue-400 flex-shrink-0" />
                     <span className="text-gray-300 text-lg">
                       Digital Services
                     </span>
                   </li>
                   <li className="flex items-center space-x-4">
-                    <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0" />
+                    <CornerDownRight className="h-6 w-6 text-blue-400 flex-shrink-0" />
                     <span className="text-gray-300 text-lg">
                       Subscription Businesses
                     </span>
@@ -627,7 +630,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-orange-900/80 via-orange-800/80 via-black  to-blue-900  relative  overflow-hidden">
+      <section className="py-24 bg-gradient-to-r from-blue-900 via-black  to-blue-900  relative  overflow-hidden ">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10"></div>
         <div className="container mx-auto px-6 text-center relative ">
           <div className="max-w-4xl mx-auto">
