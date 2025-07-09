@@ -10,7 +10,7 @@ const DemoButton: React.FC = () => {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="bg-gradient-to-r from-blue-800 to-blue-800/50 text-white px-8 py-4 text-lg h-14 transition-all duration-300 hover:scale-105 transform backdrop-blur-sm group rounded-md flex items-center z-[100]">
+        className="bg-gradient-to-r from-blue-800 to-blue-800/50 text-white px-8 py-4 lg:text-lg text-sm md:h-14 transition-all duration-300 hover:scale-105 transform backdrop-blur-sm group rounded-md flex items-center z-10">
         <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
         Watch Demo
       </button>
