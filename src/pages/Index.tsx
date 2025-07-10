@@ -72,7 +72,6 @@ const Index = () => {
             }}></div>
         </div>
       </div> */}
-
       {/* Animated Background Icons */}
       {/* <div className="fixed inset-0 pointer-events-none opacity-5 z-0">
         {floatingIcons.map((item, index) => {
@@ -93,7 +92,6 @@ const Index = () => {
           );
         })}
       </div> */}
-
       {/* Navigation Bar */}
       {/* <nav className="border-b border-gray-800/50 bg-black backdrop-blur-xl sticky top-0 z-50 transition-all duration-300"> */}
       {/* <div className=" mx-auto md:px-6 px-3 py-4">
@@ -102,7 +100,6 @@ const Index = () => {
       {/* </div>
         </div> */}
       {/* </nav> */}
-
       {/* Hero Section */}
       <section className="md:pt-[13rem] pt-[5rem] md:pb-32 relative bg-black  ">
         <video
@@ -118,7 +115,7 @@ const Index = () => {
         {/* <div className="container mx-auto px-6 "> */}
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center px-6 py-3 border border-blue-800/30 rounded-full text-blue-300 text-sm font-medium mb-4  backdrop-blur-sm transform md:-translate-y-16 translate-y-2 bg-blue-200/20">
-            <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-green-400 rounded-full mr-3 animate-pulse" />
+            <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-green-400 rounded-full mr-3 animate-pulse " />
             Advayu X POP
             <img src="/image.png" alt="POP" className="w-4 h-4 mx-2" />
             is Now Live
@@ -187,7 +184,6 @@ const Index = () => {
         </div>
         {/* </div> */}
       </section>
-
       {/* What is Advayu */}
       <section className="pt-10 pb-20 bg-gradient-to-bl from-black via-black to-blue-900 relative ">
         <div className="container mx-auto px-6">
@@ -218,7 +214,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
       {/* How it Works */}
       <section
         id="how-it-works"
@@ -335,7 +330,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
       {/* Why Brands Choose Advayu */}
       <section
         id="features"
@@ -383,7 +377,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
       {/* Who It's For */}
       <section className="py-24 bg-gradient-to-r from-blue-900 via-black via-black  to-black relative ">
         <div className="container mx-auto px-6">
@@ -480,7 +473,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
       {/* Distribution Partners */}
       <section className="py-24 bg-black relative ">
         <div className="container mx-auto px-6">
@@ -538,7 +530,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
       {/* Testimonials */}
       <section
         id="testimonials"
@@ -571,7 +562,23 @@ const Index = () => {
           </div>
         </div>
       </section>
-
+      {/* Born from a Better Way to Sell People don’t buy when they scroll — they
+      buy when they pay. Advayu was born out of frustration with wasted
+      marketing budgets and poor targeting. We realized the old playbook —
+      chasing attention in feeds, banners, and inboxes — just doesn’t cut it
+      anymore. So we built something better. We help brands show up at the
+      moment of payment — the one moment when customers are most ready to buy.
+      Not before, not after. Who We Are We’re a team that’s lived through
+      fintech dashboards, scaled D2C brands, and obsessed over growth numbers.
+      With experience in fintech, commerce, and product growth, we’ve seen what
+      works — and what doesn’t — up close. We’re not here to shout louder. We’re
+      here to sell smarter. What We Deliver ✅ Up to 300% better sales
+      performance compared to traditional campaigns ✅ Precision — offers shown
+      only at peak intent moments ✅ Seamless, secure, and scalable for modern
+      businesses Why Brands Trust Us Built for impact — Focused on real sales,
+      not vanity metrics Enterprise-ready — Secure, compliant, and reliable at
+      scale Plug & Play — Easy to set up, with no disruption to your customer
+      journey */}
       {/* About Us */}
       <section
         id="about"
@@ -583,11 +590,11 @@ const Index = () => {
                 About Us
               </h2>
               <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed max-w-4xl mx-auto font-light">
-                Advayu was born from frustration with ineffective ad spend and
-                poor targeting. Our founding team, comprising former executives
-                from leading fintech and advertising companies, recognized that
-                the point of payment represents the highest intent moment for
-                customers.
+                Born from a Better Way to Sell People don’t buy when they scroll
+                — they buy when they pay. Frustrated by wasted budgets and poor
+                targeting, we built Advayu to do what the old playbook can’t:
+                put your brand at the moment of payment — when customers are
+                most ready to buy.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-12">
@@ -628,7 +635,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-r from-blue-900 via-black  to-blue-900  relative  overflow-hidden ">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10"></div>
@@ -665,7 +671,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
       {/* Contact Form */}
       <section
         id="contact"
@@ -688,9 +693,8 @@ const Index = () => {
           </div>
         </div>
       </section>
-
       <style>{`
-
+.text-glow{text-shadow: 2px 2px #ff0000;}
        .bg-image {
   background-image: url("./bg01.png");
   background-position: center center; /* centers the image horizontally and vertically */
