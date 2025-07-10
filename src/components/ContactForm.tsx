@@ -114,9 +114,10 @@ const ContactForm = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <Label htmlFor="website" className="text-gray-300 font-medium">
-                Website
+                Website *
               </Label>
               <Input
+                required
                 id="website"
                 type="url"
                 placeholder="https://yourwebsite.com"
@@ -148,6 +149,7 @@ const ContactForm = () => {
               Target Type *
             </Label>
             <Select
+              required
               value={formData.targetType}
               onValueChange={(value) => handleInputChange("targetType", value)}>
               <SelectTrigger className="border-gray-700 bg-gray-800/50 text-white focus:border-blue-500 focus:ring-blue-500">
@@ -170,9 +172,10 @@ const ContactForm = () => {
 
           <div className="space-y-2">
             <Label htmlFor="postType" className="text-gray-300 font-medium">
-              POS/Platform Used
+              POS/Platform Used *
             </Label>
             <Input
+              required
               id="postType"
               type="text"
               placeholder="e.g., Shopify, Razorpay POS, Square, etc."
@@ -186,9 +189,10 @@ const ContactForm = () => {
             <Label
               htmlFor="cityDemographics"
               className="text-gray-300 font-medium">
-              City/Target Demographics
+              City/Target Demographics *
             </Label>
             <Input
+              required
               id="cityDemographics"
               type="text"
               placeholder="e.g., Mumbai, Delhi, 25-35 age group, etc."
