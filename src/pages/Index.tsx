@@ -562,7 +562,24 @@ const Index = () => {
           </div>
         </div>
       </section>
-
+      {/* Born from a Better Way to Sell People don’t buy when they scroll — they
+      buy when they pay. Advayu was born out of frustration with wasted
+      marketing budgets and poor targeting. We realized the old playbook —
+      chasing attention in feeds, banners, and inboxes — just doesn’t cut it
+      anymore. So we built something better. We help brands show up at the
+      moment of payment — the one moment when customers are most ready to buy.
+      Not before, not after. Who We Are We’re a team that’s lived through
+      fintech dashboards, scaled D2C brands, and obsessed over growth numbers.
+      With experience in fintech, commerce, and product growth, we’ve seen what
+      works — and what doesn’t — up close. We’re not here to shout louder. We’re
+      here to sell smarter. What We Deliver ✅ Up to 300% better sales
+      performance compared to traditional campaigns ✅ Precision — offers shown
+      only at peak intent moments ✅ Seamless, secure, and scalable for modern
+      businesses Why Brands Trust Us Built for impact — Focused on real sales,
+      not vanity metrics Enterprise-ready — Secure, compliant, and reliable at
+      scale Plug & Play — Easy to set up, with no disruption to your customer
+      journey */}
+      {/* About Us */}
       <section
         id="about"
         className="py-24  bg-gradient-to-r from-blue-900 via-black via-black  to-black relative ">

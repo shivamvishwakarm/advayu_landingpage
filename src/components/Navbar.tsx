@@ -5,7 +5,7 @@ const navlinks = [
   { link: "/", name: "Home" },
   { link: "#about", name: "About" },
   { link: "#contact", name: "Contact" },
-  { link: "/", name: "Get started" },
+  { link: "https://onboarding.advayu.club//", name: "Get started" },
 ];
 
 const Navbar = () => {
@@ -32,20 +32,31 @@ const Navbar = () => {
           className=" md:flex hidden md:items-center gap-10  px-5 py-3 rounded-full border border-white/10"
           style={{
             boxShadow: "inset 0 0 12px rgba(107, 145, 197, 0.6)",
-          }}>
+          }}
+        >
           {navlinks.map((item, index) => (
-            <a key={index} href={item.link} className="text-white">
+            <a
+              key={index}
+              href={item.link}
+              target={item.name === "Get started" ? "_blank" : undefined}
+              rel={
+                item.name === "Get started" ? "noopener noreferrer" : undefined
+              }
+              className="text-white"
+            >
               {item.name}
             </a>
           ))}
         </div>
 
         <a
-          href="#"
+          href="https://brands.advayu.club/login"
+          target="_blank"
           className="md:flex hidden text-white px-6 py-3 rounded-full border border-white/10"
           style={{
             boxShadow: "inset 0 0 12px rgba(107, 145, 197, 0.6)",
-          }}>
+          }}
+        >
           Login
         </a>
       </div>
@@ -53,14 +64,16 @@ const Navbar = () => {
       <button
         className="md:hidden text-white focus:outline-none z-50"
         onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle menu">
+        aria-label="Toggle menu"
+      >
         {/* Hamburger SVG */}
         <svg
           className="w-8 h-8"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg">
+          xmlns="http://www.w3.org/2000/svg"
+        >
           {isOpen ? (
             <path
               strokeLinecap="round"
@@ -88,7 +101,9 @@ const Navbar = () => {
                 boxShadow: "inset 0 0 12px rgba(107, 145, 197, 0.6)",
               }}
               key={index}
-              href={item.link}>
+              href={item.link}
+              target="_blank"
+            >
               {item.name}
             </a>
           ))}
@@ -97,7 +112,8 @@ const Navbar = () => {
             className="flex  text-white px-6 py-3 rounded-full border border-white/10"
             style={{
               boxShadow: "inset 0 0 12px rgba(107, 145, 197, 0.6)",
-            }}>
+            }}
+          >
             Login
           </a>
         </div>
