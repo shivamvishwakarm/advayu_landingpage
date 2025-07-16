@@ -1,5 +1,4 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay } from 'swiper/modules'
+
 import Marquee from "react-fast-marquee";
 
 
