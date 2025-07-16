@@ -2,8 +2,6 @@
 import Marquee from "react-fast-marquee";
 
 
-// Import Swiper styles
-import 'swiper/css'
 
 const BrandCarousel = () => {
     const brands = [
