@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Advayu_logo from "./Advayu_logo";
 
 const navlinks = [
-  { link: "/", name: "Home" },
+  { link: "#", name: "Home" },
   { link: "#about", name: "About" },
   { link: "#contact", name: "Contact" },
   { link: "https://onboarding.advayu.club//", name: "Get started" },
@@ -24,12 +24,12 @@ const Navbar = () => {
     };
   }, [isOpen]);
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-black flex md:items-center justify-between px-2 py-4">
+    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-sm flex md:items-center justify-between px-2 py-4">
       <div className=" flex flex-row items-center md:justify-center justify-between gap-6 w-full">
         <Advayu_logo />
 
         <div
-          className=" md:flex hidden md:items-center gap-10  px-5 py-3 rounded-full border border-white/10"
+          className=" md:flex hidden md:items-center gap-10  px-5 py-[0.90rem] rounded-full border border-white/10"
           style={{
             boxShadow: "inset 0 0 12px rgba(107, 145, 197, 0.6)",
           }}
