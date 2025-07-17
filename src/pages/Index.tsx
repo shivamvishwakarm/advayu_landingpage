@@ -34,7 +34,7 @@ import FeatureCard from "@/components/FeatureCard";
 import DemoButton from "@/components/DemoButton";
 import Navbar from "@/components/Navbar";
 import BrandCarousel from "@/components/BrandCarousel";
-import Footer  from "@/components/footer";
+import Footer from "@/components/footer";
 
 const floatingIcons = [
   { icon: Star, delay: "0s", duration: "20s", x: "10%", y: "20%" },
@@ -187,7 +187,7 @@ const Index = () => {
         {/* </div> */}
       </section>
 
-      <BrandCarousel />
+      {/* <BrandCarousel /> */}
       {/* What is Advayu */}
       <section className="pt-10 pb-20 bg-gradient-to-bl from-black via-black to-blue-900 relative ">
         <div className="container mx-auto px-6">
@@ -658,7 +658,7 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button
-              onClick={()=> window.open("https://cal.com/siddharth-advayu", "_blank")}
+                onClick={() => window.open("https://cal.com/siddharth-advayu", "_blank")}
                 size="lg"
                 className="bg-white hover:bg-gray-100 text-gray-900 font-semibold px-8 py-4 text-lg h-14 border-0 transition-all duration-300 hover:scale-105 transform hover:shadow-2xl relative overflow-hidden group">
                 <span className="relative  flex items-center">
@@ -667,7 +667,7 @@ const Index = () => {
                 </span>
               </Button>
               <Button
-              onClick={()=> window.open("https://onboarding.advayu.club/", "_blank")}
+                onClick={() => window.open("https://onboarding.advayu.club/", "_blank")}
                 size="lg"
                 variant="outline"
                 className="border-gray-600/50 bg-gray-800/50 text-white px-8 py-4 text-lg h-14 transition-all duration-300 hover:scale-105 transform backdrop-blur-sm group">
@@ -696,12 +696,12 @@ const Index = () => {
               </p>
             </div>
             <ContactForm />
-                  
+
           </div>
         </div>
-        
+
       </section>
-<Footer/>
+      <Footer />
       <style>{`
 .text-glow{text-shadow: 2px 2px #ff0000;}
        .bg-image {
