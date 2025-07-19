@@ -96,19 +96,27 @@ const Navbar = () => {
         <div className="md:hidden  fixed bg-black top-20 left-0 w-screen h-screen bg-blue/95 flex flex-col items-center pt-20 z-40 gap-10 text-white text-3xl">
           {navlinks.map((item, index) => (
             <a
-              className="  md:items-center gap-10  px-5 py-3 rounded-full border border-white/10"
+              key={index}
+              href={item.link !== "#" ? item.link : "javascript:void(0)"}
+              onClick={() => {
+                setIsOpen(false);
+                if (item.link.startsWith("#")) {
+                  const el = document.querySelector(item.link);
+                  if (el) el.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              target={item.link.startsWith("http") ? "_blank" : undefined}
+              rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined}
+              className="md:items-center gap-10 px-5 py-3 rounded-full border border-white/10"
               style={{
                 boxShadow: "inset 0 0 12px rgba(107, 145, 197, 0.6)",
               }}
-              key={index}
-              href={item.link}
-              target="_blank"
             >
               {item.name}
             </a>
           ))}
           <a
-            href="#"
+            href="https://brands.advayu.club/login"
             className="flex  text-white px-6 py-3 rounded-full border border-white/10"
             style={{
               boxShadow: "inset 0 0 12px rgba(107, 145, 197, 0.6)",
