@@ -98,9 +98,13 @@ const Navbar = () => {
             <a
               key={index}
               href={item.link !== "#" ? item.link : "javascript:void(0)"}
-              onClick={() => {
+              onClick={(e) => {
                 setIsOpen(false);
-                if (item.link.startsWith("#")) {
+
+                if (item.link === "#") {
+                  // Scroll to top for "Home"
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                } else if (item.link.startsWith("#")) {
                   const el = document.querySelector(item.link);
                   if (el) el.scrollIntoView({ behavior: "smooth" });
                 }
